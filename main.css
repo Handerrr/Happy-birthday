@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #ffcc00; /* Amarelo para comemoração */
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.carousel-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 400px; /* Largura do carrossel */
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: none;
+}
+
+.carousel-slide img:first-child {
+    display: block; /* Mostra a primeira imagem por padrão */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.text-area {
+    max-width: 400px; /* Largura do texto ao lado do carrossel */
+    padding: 20px;
+    background-color: #fff; /* Fundo branco para o texto */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-area h2 {
+    margin-bottom: 10px;
+}
+
+.text-area p {
+    font-size: 16px;
+    line-height: 1.5;
+}
